@@ -1,19 +1,25 @@
 ﻿using System;
 
-class SumNumbers
+namespace Sum_Numbers
 {
-    static void Main()
+    class Program
     {
-        int n = int.Parse(Console.ReadLine());
-
-        int totalSum = 0;
-
-        for (int i = 0; i < n; i++)
+        static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-            totalSum+=number;
-        }
 
-        Console.WriteLine(totalSum);
+            int sumNumber = 0;
+
+            while (sumNumber<number)
+            {
+                int correct = int.Parse(Console.ReadLine());
+            
+                sumNumber += correct;
+               
+                
+            }
+            Console.WriteLine(sumNumber);
+            
+        }
     }
 }
